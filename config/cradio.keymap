@@ -47,8 +47,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <4 4>;
-            then-layer = <4>;
+            if-layers = <3 3>;
+            then-layer = <3>;
         };
     };
 
@@ -61,7 +61,7 @@
 &kp Q        &kp W             &kp E           &kp R           &kp T          &kp Y        &kp U            &kp I            &kp O              &kp P
 &ht LCTRL A  &ht LEFT_SHIFT S  &ht LEFT_ALT D  &ht LEFT_GUI F  &kp G          &kp H        &ht RIGHT_GUI J  &ht RIGHT_ALT K  &ht RIGHT_SHIFT L  &ht RIGHT_CONTROL SEMICOLON
 &kp Z        &kp X             &kp C           &kp V           &kp B          &kp N        &kp M            &kp COMMA        &kp DOT            &kp SLASH
-                                               &kp TAB         &lt 4 SPACE    &lt 1 ENTER  &kp BACKSPACE
+                                               &kp TAB         &lt 3 SPACE    &lt 1 ENTER  &kp BACKSPACE
             >;
         };
 
@@ -83,15 +83,6 @@
             >;
         };
 
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
-            >;
-        };
-
         mouse {
             display-name = "Mouse";
             bindings = <
@@ -99,15 +90,6 @@
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans    &trans    &trans    &trans         &trans          &trans          &trans        &trans           &trans
                             &trans    &trans         &trans          &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
             >;
         };
     };
