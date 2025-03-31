@@ -61,7 +61,7 @@
 &kp Q        &kp W             &kp E           &kp R            &kp T          &kp Y        &kp U            &kp I            &kp O              &kp P
 &ht LCTRL A  &ht LEFT_SHIFT S  &ht LEFT_ALT D  &ht LEFT_GUI F   &kp G          &kp H        &ht RIGHT_GUI J  &ht RIGHT_ALT K  &ht RIGHT_SHIFT L  &ht RIGHT_CONTROL SEMICOLON
 &kp Z        &kp X             &kp C           &kp V            &kp B          &kp N        &kp M            &kp COMMA        &kp DOT            &kp SLASH
-                                               &lt 4 BACKSPACE  &lt 2 SPACE    &lt 1 ENTER  &kp TAB
+                                               &lt 4 BACKSPACE  &lt 2 SPACE    &lt 1 ENTER  &lt 3 TAB
             >;
         };
 
@@ -86,10 +86,10 @@
 
         Symbol {
             bindings = <
-&trans  &kp LESS_THAN      &kp EQUAL  &kp GREATER_THAN  &trans        &kp N6  &kp APOS        &kp MINUS      &kp GRAVE        &trans
-&trans  &kp LS(BACKSLASH)  &kp MINUS  &kp LS(N0)        &kp PLUS      &kp N5  &kp LEFT_BRACE  &kp SEMI       &kp RIGHT_BRACE  &kp N1
-&trans  &kp ASTRK          &kp COLON  &kp FSLH          &kp DOLLAR    &kp AT  &kp PIPE        &kp LS(GRAVE)  &kp AMPERSAND    &trans
-                                      &trans            &trans        &trans  &trans
+&kp EXCL       &kp LESS_THAN      &kp EQUAL  &kp GREATER_THAN  &kp GRAVE     &kp CARET    &kp LEFT_BRACKET  &kp UNDER      &kp RIGHT_BRACKET  &trans
+&kp BACKSLASH  &kp LS(BACKSLASH)  &kp MINUS  &kp LS(N0)        &kp PLUS      &kp PERCENT  &kp LEFT_BRACE    &kp SEMI       &kp RIGHT_BRACE    &kp SINGLE_QUOTE
+&kp HASH       &kp ASTRK          &kp COLON  &kp FSLH          &kp DOLLAR    &kp AT       &kp PIPE          &kp LS(GRAVE)  &kp AMPERSAND      &trans
+                                             &trans            &trans        &trans       &trans
             >;
         };
 
