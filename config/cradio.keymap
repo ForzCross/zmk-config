@@ -65,21 +65,21 @@
             >;
         };
 
-        Numbers {
+        Num_nav {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7          &kp N8        &kp N9     &kp N0
+&trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
+                        &trans  &trans    &trans    &trans
             >;
         };
 
         Fnumbers {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans          &trans          &trans        &trans     &trans
-&kp F5  &kp F6   &kp F7   &kp F8   &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
-&kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans          &trans          &trans        &trans     &trans
-                          &trans   &trans    &trans          &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4     &trans  &trans  &trans  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8     &trans  &trans  &trans  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12    &trans  &trans  &trans  &trans  &trans
+                         &trans   &trans     &trans  &trans
             >;
         };
 
@@ -87,7 +87,7 @@
             display-name = "Mouse";
             bindings = <
 &kp ESCAPE          &trans    &trans    &trans    &bootloader    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-&trans              &mkp MB3  &mkp MB2  &mkp MB1  &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&kp GRAVE           &mkp MB3  &mkp MB2  &mkp MB1  &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &kp LA(LEFT_SHIFT)  &trans    &trans    &trans    &trans         &trans          &trans          &trans        &trans           &trans
                                         &trans    &trans         &trans          &trans
             >;
