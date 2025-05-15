@@ -75,6 +75,11 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <7 8>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
@@ -83,29 +88,29 @@
         Default {
             display-name = "DEFAULT";
             bindings = <
-&ht LEFT_WIN Q    &kp W  &kp E  &kp R            &kp T          &kp Y      &kp U               &kp I      &kp O    &ht RIGHT_GUI P
-&ht LCTRL A       &kp S  &kp D  &kp F            &kp G          &kp H      &kp J               &kp K      &kp L    &ht RIGHT_CONTROL SEMICOLON
-&ht LEFT_SHIFT Z  &kp X  &kp C  &kp V            &kp B          &kp N      &kp M               &kp COMMA  &kp DOT  &ht RIGHT_SHIFT SLASH
-                                &lt 1 BACKSPACE  &lt 2 SPACE    &lt 3 TAB  &ht LEFT_ALT ENTER
+&ht LEFT_WIN Q    &kp W  &kp E  &kp R          &kp T          &kp Y      &kp U               &kp I      &kp O    &ht RIGHT_GUI P
+&ht LCTRL A       &kp S  &kp D  &kp F          &kp G          &kp H      &kp J               &kp K      &kp L    &ht RIGHT_CONTROL SEMICOLON
+&ht LEFT_SHIFT Z  &kp X  &kp C  &kp V          &kp B          &kp N      &kp M               &kp COMMA  &kp DOT  &ht RIGHT_SHIFT SLASH
+                                &kp BACKSPACE  &lt 1 SPACE    &lt 3 TAB  &ht LEFT_ALT ENTER
             >;
         };
 
         Num_nav {
             bindings = <
 &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7          &kp N8        &kp N9     &kp N0
-&trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &tog 2
 &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
-                        &trans  &trans    &trans    &trans
+                        &trans  &trans    &mo 4     &trans
             >;
         };
 
         Mouse {
             display-name = "Mouse";
             bindings = <
-&kp ESCAPE  &trans    &trans    &trans    &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &tog 2
-&kp GRAVE   &mkp MB3  &mkp MB2  &mkp MB1  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans      &trans    &trans    &trans    &trans    &trans          &trans          &trans        &trans           &trans
-                                &trans    &trans    &mo 4           &trans
+&trans  &trans    &trans    &trans    &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans    &trans    &trans    &trans    &trans          &trans          &trans        &trans           &trans
+                            &trans    &trans    &trans          &trans
             >;
         };
 
@@ -132,7 +137,7 @@
 &kp ESC    &kp Q  &kp W  &kp E         &kp R          &kp T   &kp Y   &kp U  &kp I   &kp O
 &kp LSHFT  &kp A  &kp S  &kp D         &kp F          &kp G   &kp H   &kp J  &kp K   &ht RIGHT_SHIFT L
 &kp LCTRL  &kp Z  &kp X  &kp C         &kp V          &kp B   &kp N   &kp M  &trans  &ht RCTRL P
-                         &kp LEFT_ALT  &lt 2 SPACE    &trans  &trans
+                         &kp LEFT_ALT  &lt 2 SPACE    &tog 5  &trans
             >;
         };
     };
