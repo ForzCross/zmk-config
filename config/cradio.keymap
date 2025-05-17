@@ -63,7 +63,7 @@
 
         open_square {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <8 9>;
+            key-positions = <9 7>;
         };
 
         quote {
@@ -73,12 +73,12 @@
 
         close_square {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <2 0>;
         };
     };
 
