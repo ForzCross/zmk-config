@@ -24,10 +24,9 @@
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
 
@@ -63,7 +62,7 @@
 
         open_square {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <9 7>;
+            key-positions = <9 8>;
         };
 
         quote {
@@ -73,12 +72,12 @@
 
         close_square {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <2 0>;
+            key-positions = <2 1>;
         };
     };
 
@@ -97,10 +96,10 @@
 
         Num_nav {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7          &kp N8        &kp N9     &kp N0
-&trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
-                        &trans  &trans    &mo 4     &trans
+&ht LEFT_WIN N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7          &kp N8        &kp N9     &ht RIGHT_WIN N0
+&trans           &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&trans           &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans
+                                 &trans  &trans    &mo 4     &trans
             >;
         };
 
@@ -119,7 +118,7 @@
 &kp GRAVE      &kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN  &kp HASH      &kp CARET    &kp LEFT_BRACKET  &kp UNDER      &kp RBKT         &kp BSLH
 &kp BACKSLASH  &kp LS(N9)     &kp MINUS  &kp LS(N0)        &kp PLUS      &kp PERCENT  &kp LEFT_BRACE    &kp SEMI       &kp RIGHT_BRACE  &kp APOS
 &trans         &kp ASTRK      &kp COLON  &kp FSLH          &kp DOLLAR    &kp AT       &kp PIPE          &kp LS(GRAVE)  &kp AMPERSAND    &trans
-                                         &trans            &mo 4         &trans       &trans
+                                         &kp DELETE        &mo 4         &trans       &trans
             >;
         };
 
