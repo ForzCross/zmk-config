@@ -92,6 +92,11 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <0 31>;
         };
+
+        win+tab {
+            bindings = <&kp RG(TAB)>;
+            key-positions = <9 32>;
+        };
     };
 
     keymap {
