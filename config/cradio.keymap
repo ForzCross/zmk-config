@@ -133,10 +133,10 @@
 
         Symbol {
             bindings = <
-&kp GRAVE      &kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN  &kp HASH      &kp CARET    &kp LEFT_BRACKET  &kp UNDER      &kp RBKT         &kp BSLH
-&kp BACKSLASH  &kp LS(N9)     &kp MINUS  &kp LS(N0)        &kp PLUS      &kp PERCENT  &kp LEFT_BRACE    &kp SEMI       &kp RIGHT_BRACE  &kp APOS
-&trans         &kp ASTRK      &kp COLON  &kp FSLH          &kp DOLLAR    &kp AT       &kp PIPE          &kp LS(GRAVE)  &kp AMPERSAND    &trans
-                                         &kp DELETE        &mo 4         &trans       &trans
+&mt LEFT_WIN GRAVE  &kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN  &kp HASH      &kp CARET    &kp LEFT_BRACKET  &kp UNDER      &kp RBKT         &mt LEFT_WIN BSLH
+&kp LCTRL           &kp LS(N9)     &kp MINUS  &kp LS(N0)        &kp PLUS      &kp PERCENT  &kp LEFT_BRACE    &kp SEMI       &kp RIGHT_BRACE  &mt RCTRL SQT
+&trans              &kp ASTRK      &kp COLON  &kp FSLH          &kp DOLLAR    &kp AT       &kp PIPE          &kp LS(GRAVE)  &kp AMPERSAND    &trans
+                                              &kp DELETE        &mo 4         &trans       &trans
             >;
         };
 
