@@ -97,6 +97,11 @@
             bindings = <&kp RG(TAB)>;
             key-positions = <9 32>;
         };
+
+        Caps_on_double_shift {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <29 20>;
+        };
     };
 
     keymap {
